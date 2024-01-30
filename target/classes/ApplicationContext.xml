@@ -28,6 +28,11 @@
  <bean id="vishal"  class="spring.core.model.Employee">
 	<constructor-arg name="name" value="Mukul"/>
 	<constructor-arg name="id" value="101"/>
-	<constructor-arg ref="add"/>
+	<!-- <constructor-arg ref="add"/> --> 
+	</bean>
+	
+	
+	<bean id = "Kunal" class="spring.core.model.Employee" parent="vishal">
+		<constructor-arg name="address" ref="add"/>
 	</bean>
    </beans>

@@ -11,11 +11,12 @@ class Runner {
 
 	public static void main(String[] args) {
 		ApplicationContext IOC = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-//		Employee e1 =  (Employee)IOC.getBean("vishal");
-		Employee e2 =  IOC.getBean(Employee.class,"vishal");
+		Employee e1 =  (Employee)IOC.getBean("Kunal");
+//		Employee e2 =  IOC.getBean(Employee.class,"Kunal");
 		
-//		System.out.println(e1);
-		System.out.println(e2);
+		
+		System.out.println(e1);
+//		System.out.println(e2);
 	}
 
 	}
