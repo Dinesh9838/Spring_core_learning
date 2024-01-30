@@ -8,26 +8,18 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
    
-   <!--  Setter Based -->
-   
-  <!-- <bean id="vishal" class="spring.core.model.Employee">
-   <property name="name" value="Vishal Kumar"/>
-   <property name="id" value="909"/>  
-</bean> -->
- 
- <!-- Constructor Based   -->
- 
-   <bean id="add" class="spring.core.model.Address">
-		<constructor-arg name="street"
-			value="momoz baali gali" />
-		<constructor-arg name="city" value="Noida" />
-		<constructor-arg name="state" value="UP" />
-	</bean>
- 
- 
- <bean id="vishal"  class="spring.core.model.Employee">
+   <!-- 		Setter based
+ -->	<!-- <bean id="vishal"  class="spring.core.model.Employee">
+	<property name="name" value="Vishal Kumar"/>
+	<property name="id" value="909"/>
+	</bean> -->
+	
+	
+<!--    COnstructor based -->   
+	<bean id="vishal"  class="spring.core.model.Employee">
 	<constructor-arg name="name" value="Mukul"/>
-	<constructor-arg name="id" value="101"/>
-	<constructor-arg ref="add"/>
+	<constructor-arg name="id" value="101" type="int"/>
 	</bean>
-   </beans>
+	
+	</beans>
+	
