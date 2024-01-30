@@ -10,14 +10,25 @@
    
    <!--  Setter Based -->
    
-  <!-- <bean id="vishal" class="spring.core.model.Employee">
+   <bean id="add1" class="spring.core.model.Address">
+   <property name="street" value="gaawo ki gali"/>
+    <property name="city" value="Basti"/>
+     <property name="state" value="up"/>
+   
+   </bean>
+   
+   <bean id="vishal" class="spring.core.model.Employee">
    <property name="name" value="Vishal Kumar"/>
-   <property name="id" value="909"/>  
-</bean> -->
+   <property name="id" value="909"/>
+   <property name="address" ref="add1"/>  
+</bean> 
+
+
+
  
  <!-- Constructor Based   -->
  
-   <bean id="add" class="spring.core.model.Address">
+  <!--   <bean id="add" class="spring.core.model.Address">
 		<constructor-arg name="street"
 			value="momoz baali gali" />
 		<constructor-arg name="city" value="Noida" />
@@ -29,5 +40,8 @@
 	<constructor-arg name="name" value="Mukul"/>
 	<constructor-arg name="id" value="101"/>
 	<constructor-arg ref="add"/>
-	</bean>
+	</bean> -->
+	
+	
+	
    </beans>
